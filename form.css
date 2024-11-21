@@ -1,0 +1,137 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    background-color:#f7f7f7
+    
+
+    
+    
+}
+
+.form-container {
+    
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    background-color:darkcyan;
+    margin: 20px;
+    
+}
+
+
+.wrapper {
+    text-align: left; 
+}
+
+
+.wrapper .logo img {
+    display: block; 
+    margin-left: 5px; 
+    width: 50px; 
+    height: 50px;
+}
+
+
+.wrapper h3, .wrapper p {
+    margin: 5px; 
+}
+
+.p{
+    margin-top: 20px;
+}
+
+
+
+.form{
+    background-color:azure
+    
+    
+    
+}
+
+.form h2 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #333;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+}
+
+.head-container{
+    text-align: left;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.head-container p {
+    font-size: 12px;
+}
+input[type="text"], input[type="password"] input[type="lastname"] input[type="gender"] input[type="Date of birth"] input[type="Weight(KG)"] input[type="Height(KG)"] input[type="Activity Level"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    display:block ;
+    text-align: left;
+    margin: 5px;
+    stroke: #333;
+    
+}
+
+button {
+    width: 90%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 5px;
+     margin: bottom 20px; ;
+}
+
+.p span{
+    color: white
+}
+button:hover {
+    background-color: #45a049;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 480px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    input[type="text"], input[type="password"],   input[type="gender"],   button {
+        font-size: 14px;
+    }
+}

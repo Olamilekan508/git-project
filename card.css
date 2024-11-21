@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-container {
+    position: relative; /* Make the image container a positioned element */
+}
+
+.watch-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-btn {
+    position: absolute; /* Position button absolutely within the image container */
+    top: 20px; /* Adjust as needed to place the button on the image */
+    left: 27%;
+    transform: translateX(-50%); /* Center button horizontally */
+    padding: 10px 20px;
+    background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent background */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 14.5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+    background-color: rgba(0, 123, 255, 1); /* Solid color on hover */
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.card-title span {
+    color:#666; 
+    font-weight:200; 
+}
